@@ -43,7 +43,7 @@ be represented in Racket as
 '("8 green" "6 blue" "20 red" "5 blue "4 red" "13 green" "5 green" "1 red")
 ```
 
-Split the colored cube counts by spaces.  If for given color, the number
+Split the colored cube counts by spaces.  If for the given color, the number
 exceeds the current count, replace the current color count.  Perform this
 for all colored cube counts in a game, and assume that the initial count
 of reds, greens, and blues is 0.  Overall, the final count should be
