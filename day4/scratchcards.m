@@ -6,7 +6,7 @@
 args = argv();
 
 if length(args) == 0
-    display('Please provide the puzzle input file');
+    display('Please provide the puzzle input file.');
 else
     cards = strsplit(fileread(args{1}), '\n')(1:end-1);
 
@@ -19,15 +19,14 @@ else
         totalPoints = totalPoints + bitshift(1, matches - 1);
     end
 
-    cardTotals = containers.Map(cards, ones(1, totalCards));
+    cardTotals = ones(1, totalCards);
     for i = 1:length(cards);
         matches = cardmatches(cards{i});
 
-        totalCards = totalCards + cardTotals(cards{i})*matches;
+        totalCards = totalCards + cardTotals(i)*matches;
 
         for j = 1:matches
-            cardTotals(cards{i + j}) = cardTotals(cards{i + j}) ...
-                                       + cardTotals(cards{i});
+            cardTotals(i + j) = cardTotals(i + j) + cardTotals(i);
         end
     end
 

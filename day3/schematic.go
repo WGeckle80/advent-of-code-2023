@@ -238,7 +238,7 @@ func sumPartNumbers(schem string) int {
 
 func main() {
 	if len(os.Args) == 1 {
-		fmt.Fprintf(os.Stderr, "Please provide the puzzle input file\n")
+		fmt.Fprintf(os.Stderr, "Please provide the puzzle input file.\n")
 		os.Exit(64) // Return usage error code.
 	}
 
