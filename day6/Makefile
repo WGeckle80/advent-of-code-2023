@@ -5,20 +5,23 @@ LDFLAGS = -nostdlib -static
 
 .PHONY: clean
 
-race: race.o print.o read.o string.o
-	$(CC) $(LDFLAGS) -o race race.o print.o read.o string.o
+race: race.o print.o read.o string.o helpers.o
+	$(CC) $(LDFLAGS) -o race race.o print.o read.o string.o helpers.o
 
-race.o: race.S
-	$(AS) $(ASFLAGS) -o race.o race.S
+race.o: src/race.S
+	$(AS) $(ASFLAGS) -o race.o src/race.S
 
-print.o: print.S
-	$(AS) $(ASFLAGS) -o print.o print.S
+print.o: src/print.S
+	$(AS) $(ASFLAGS) -o print.o src/print.S
 
-read.o: read.S
-	$(AS) $(ASFLAGS) -o read.o read.S
+read.o: src/read.S
+	$(AS) $(ASFLAGS) -o read.o src/read.S
 
-string.o: string.S
-	$(AS) $(ASFLAGS) -o string.o string.S
+string.o: src/string.S
+	$(AS) $(ASFLAGS) -o string.o src/string.S
+
+helpers.o: src/helpers.S
+	$(AS) $(ASFLAGS) -o helpers.o src/helpers.S
 
 clean:
 	rm -f race *.o
