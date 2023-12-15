@@ -77,3 +77,12 @@ Part One: {part-one-answer}
 Part Two: {part-two-answer}
 ```
 
+
+## References
+
+Racket.  (2023).  Racket.
+<https://racket-lang.org/>
+
+Wastl, Eric.  (2023).  Advent of Code.
+<https://adventofcode.com/>
+

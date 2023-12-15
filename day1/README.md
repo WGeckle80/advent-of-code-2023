@@ -91,3 +91,12 @@ Part One: {part-one-answer}
 Part Two: {part-two-answer}
 ```
 
+
+## References
+
+OCaml.  (2023).  OCaml.
+<https://ocaml.org/>
+
+Wastl, Eric.  (2023).  Advent of Code.
+<https://adventofcode.com/>
+
