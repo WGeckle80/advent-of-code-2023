@@ -32,11 +32,11 @@ the length of the schematic is the number of characters before the first
 newline, as a schematic is always rectangular.  In this case, the length is 4.
 
 Expressions of the differences between the start index and indices range
-endpoints are found in terms of the start index $$i_{start}$$, number length
-$$l_{num}$$, and schematic length $$l_{schem}$$.  In general, the characters at
-indices $$i_{start} - 1$$, $$i_{start} + l_{schem}$$, and every index in
-the ranges $$[i_{start} - l_{schem} - 2, i_{start} - l_{schem} + l_{num})$$ and
-$$[i_{start} + l_{line}, i_{start} + l_{schem} + l_{num} + 1]$$ must be checked
+endpoints are found in terms of the start index $i_{start}$, number length
+$l_{num}$, and schematic length $l_{schem}$.  In general, the characters at
+indices $i_{start} - 1$, $i_{start} + l_{schem}$, and every index in
+the ranges $[i_{start} - l_{schem} - 2, i_{start} - l_{schem} + l_{num})$ and
+$[i_{start} + l_{line}, i_{start} + l_{schem} + l_{num} + 1]$ must be checked
 for non-dot and non-digit characters.
 
 Iterate over the puzzle input file contents as a linear data structure.  If any
