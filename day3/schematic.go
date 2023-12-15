@@ -104,7 +104,7 @@ func sumGearRatios(schem string) int {
 			currRatio *= adjNum
 		}
 
-		// Search for a potential number to the left of the asterisk.
+		// Search for a potential number to the right of the asterisk.
 		adjNum, adjStart, adjEnd = completeInt(schem, start+1)
 		if adjStart != -1 {
 			numAdjNums++

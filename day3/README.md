@@ -47,7 +47,7 @@ the answer to this problem.
 
 ### Part Two
 
-A gear is an asterisk adjacent two exactly two numbers.  The following
+A gear is an asterisk adjacent to exactly two numbers.  The following
 schematic contains a gear.
 
 ```
