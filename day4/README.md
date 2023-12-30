@@ -12,10 +12,10 @@ The card contains two sets.  Let $A = \{11, 22, 33, 44, 55\}$ represent the
 first set, and $B = \{78, 3, 22, 99, 11, 26, 33, 84\}$ represent the second
 set.  The earnings of the card is found with the formula
 
-$$\left \lfloor 2^{|A \cap B| - 1} \rfloor \right$$
+$$\lfloor 2^{|A \cap B| - 1} \rfloor$$
 
 Since $A \cap B = \{11, 22, 33\}$, and thus $|A \cap B| = 3$, the earnings for
-this card are calculated as $\left \lfloor 2^{3 - 1} \rfloor \right = 4$
+this card are calculated as $\lfloor 2^{3 - 1} \rfloor = 4$
 Perform this calculation for all cards and sum the results to get the total
 points earned.
 
