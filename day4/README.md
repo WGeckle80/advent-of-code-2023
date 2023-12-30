@@ -8,24 +8,26 @@ Suppose you're given a card
 Card 1: 11 22 33 44 55 | 78  3 22 99 11 26 33 84
 ```
 
-The card contains two sets.  Let $A = \{11, 22, 33, 44, 55\}$ represent the
-first set, and $B = \{78, 3, 22, 99, 11, 26, 33, 84\}$ represent the second
+The card contains two sets.  Let $`A = \{11, 22, 33, 44, 55\}`$ represent the
+first set, and $`B = \{78, 3, 22, 99, 11, 26, 33, 84\}`$ represent the second
 set.  The earnings of the card is found with the formula
 
 $$\lfloor 2^{|A \cap B| - 1} \rfloor$$
 
-Since $A \cap B = \{11, 22, 33\}$, and thus $|A \cap B| = 3$, the earnings for
+Since $`A \cap B = \{11, 22, 33\}`$, and thus $|A \cap B| = 3$, the earnings for
 this card are calculated as $\lfloor 2^{3 - 1} \rfloor = 4$
 Perform this calculation for all cards and sum the results to get the total
 points earned.
 
 ### Part Two
 
-Loop through the cards from the input file.  Setting the quantity of all cards
-to one initially, keep track of the quantity of each card.  For each card,
-if $n_{cards}$ represents its quantity, and $e_{card}$ represents its
-earnings, then add $n_{cards}$ to the card total, and add one to the next
-$e_{card}$ cards.  The final card total is the answer to this problem.
+Loop through the cards from the input file.  Keep track of the known quantity
+of each card, with it being known that at least one of each card is present
+initially.  Additionally, set the total number of cards to the number of cards
+in the input file.  For each card, assuming $A$ represents its first set, $B$
+represents its second set, and $n_{cards}$ represents its quantity, add
+$|A \cap B|n_{cards}$ to the card total, and add $n_{cards}$ to the next
+$|A \cap B|$ cards.  The final card total is the answer to this problem.
 
 
 ## Usage
