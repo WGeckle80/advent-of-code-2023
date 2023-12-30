@@ -21,9 +21,9 @@ points earned.
 
 ### Part Two
 
-Loop through the cards from the input file.  Keep track of the quantity of
-each card---setting the quantity of all cards to one initially.  For each
-card, if $n_{cards}$ represents its quantity, and $e_{card}$ represents its
+Loop through the cards from the input file.  Setting the quantity of all cards
+to one initially, keep track of the quantity of each card.  For each card,
+if $n_{cards}$ represents its quantity, and $e_{card}$ represents its
 earnings, then add $n_{cards}$ to the card total, and add one to the next
 $e_{card}$ cards.  The final card total is the answer to this problem.
 
