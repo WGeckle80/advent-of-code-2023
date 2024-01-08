@@ -96,7 +96,7 @@ ones.  If the current cycle is $c_{current}$, and the previous cycle of
 its matching layout is $c_{start}$, then the remaining tilt cycles on the
 platform is calculated as
 
-$$\frac{1000000000 - c_{start}}{c_{current} - c_{start}}$$
+$$(1000000000 - c_{start}) \bmod (c_{current} - c_{start})$$
 
 Perform that many more spin cycles on the platform.  As in part one, calculate
 and sum the rows' contributions for the answer to this problem.
